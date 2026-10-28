@@ -1,0 +1,198 @@
+{
+  "bundle_version": "v01",
+  "prepared_date": "2026-10-28",
+  "scope": "selected tabular source data only",
+  "files": [
+    {
+      "file": "data/Fig04_GNSS_neighborhood_series.csv",
+      "bytes": 18086,
+      "sha256": "b784265cb1fac9611f3e70022960a1f9580041b36c39ff688d6e76a4e3111dd9",
+      "rows": 249,
+      "columns": [
+        "date",
+        "GNSS_up_m",
+        "InSAR_250m_m",
+        "InSAR_500m_m",
+        "InSAR_1000m_m",
+        "InSAR_2000m_m"
+      ],
+      "description": "Matched GNSS and InSAR neighborhood histories. Historical figure number; GNSS_up_m retains its original origin, different from relative InSAR displacement."
+    },
+    {
+      "file": "data/Fig10_fixed_case_series.csv",
+      "bytes": 13508,
+      "sha256": "1f0bdbf8d5957456467f5d0997eceee63c5f4a4d95c601200fcf2350d0cbba36",
+      "rows": 249,
+      "columns": [
+        "date",
+        "E143_N497",
+        "E144_N497",
+        "E145_N496",
+        "E146_N496"
+      ],
+      "description": "Displacement histories for four selected grid cells. Historical figure number."
+    },
+    {
+      "file": "data/GNSS_metrics.csv",
+      "bytes": 766,
+      "sha256": "f3faea5573be84484561212634ce70b6bcb01a7270d553f4da59ed686e8b045b",
+      "rows": 4,
+      "columns": [
+        "radius_m",
+        "pixels",
+        "epochs",
+        "nearest_pixel_m",
+        "mean_distance_m",
+        "GNSS_rate_mm_year",
+        "InSAR_rate_mm_year",
+        "rate_difference_mm_year",
+        "offset_aligned_RMSE_mm",
+        "coherence_median",
+        "jump_fraction"
+      ],
+      "description": "GNSS/InSAR neighborhood comparison metrics at multiple radii."
+    },
+    {
+      "file": "data/Supplementary_Fig_S1_selection_rules.csv",
+      "bytes": 489,
+      "sha256": "c351f7049745c4f275dbcd3504bcbbdc7e589f8ca68d1adc9373fc0046a34a00",
+      "rows": 4,
+      "columns": [
+        "grid_id",
+        "description",
+        "pixels",
+        "median_seasonal_rate_mm_yr",
+        "median_late_minus_early_rate_mm_yr",
+        "repeated_jump_fraction",
+        "selected_model"
+      ],
+      "description": "Selection descriptors for representative complete grid histories."
+    },
+    {
+      "file": "data/Supplementary_Fig_S1_series.csv",
+      "bytes": 97981,
+      "sha256": "3efd22124d0a65ea0a1dc81e9d85f763f1cb72706fd5d98c26aa5e5a2bbdcd41",
+      "rows": 996,
+      "columns": [
+        "grid_id",
+        "date",
+        "median_mm",
+        "pixel_q25_mm",
+        "pixel_q75_mm",
+        "full_period_fit_mm"
+      ],
+      "description": "Representative grid histories, pixel envelopes and full-period fits."
+    },
+    {
+      "file": "data/Supplementary_Fig_S2_fits_and_residuals.csv",
+      "bytes": 70420,
+      "sha256": "5b09b0e2b89d3c4d0f6cc704a14d95fc6a47d5a1ba53c7bfdb8345a25a6b00ca",
+      "rows": 747,
+      "columns": [
+        "grid_id",
+        "model",
+        "date",
+        "observed_mm",
+        "fitted_mm",
+        "residual_mm"
+      ],
+      "description": "Observed/fitted histories and model residuals."
+    },
+    {
+      "file": "data/Supplementary_Fig_S2_residual_correlations.csv",
+      "bytes": 1763,
+      "sha256": "27b5b205a4e9071d1298c4beb709481fceef383ca424e534ac147b912bd2dcfe",
+      "rows": 36,
+      "columns": [
+        "grid_id",
+        "model",
+        "lag_acquisitions",
+        "residual_correlation"
+      ],
+      "description": "Residual correlations by acquisition lag."
+    },
+    {
+      "file": "data/Supplementary_Fig_S3_extreme_node_histories.csv",
+      "bytes": 16980,
+      "sha256": "27da976268bae5821e4c36fc49bc0189a05af2784ef6fe8942a470cc2da273d3",
+      "rows": 192,
+      "columns": [
+        "source_node_index",
+        "time_mjd",
+        "hours_since_start",
+        "baseline_water_level_m",
+        "SLR03_water_level_m",
+        "synchronous_residual_m"
+      ],
+      "description": "Paired Hato model water-level histories; derived from the third-party FVCOM archive."
+    },
+    {
+      "file": "data/Supplementary_Fig_S3_node_responses.csv",
+      "bytes": 978220,
+      "sha256": "ed4fe34953b68c46db0ad29c5e378d1b0ef4a9235d64a88198acb60afe89ea15",
+      "rows": 9438,
+      "columns": [
+        "node_index",
+        "lon",
+        "lat",
+        "baseline_event_max_m",
+        "SLR03_event_max_m",
+        "event_max_difference_m",
+        "nonadditive_residual_m"
+      ],
+      "description": "Paired Hato node response metrics; derived from the third-party FVCOM archive."
+    },
+    {
+      "file": "data/land_cover_bootstrap.csv",
+      "bytes": 472,
+      "sha256": "608cb23132e198b0484ff096e00621fb4816730c319c9fa9ec12e4fba26a2270",
+      "rows": 5,
+      "columns": [
+        "class_code",
+        "class_name",
+        "paired_cells",
+        "median_within_cell_difference_mm_year",
+        "bootstrap_p025",
+        "bootstrap_p975"
+      ],
+      "description": "Paired within-cell land-cover contrasts and bootstrap bounds."
+    },
+    {
+      "file": "data/rank_correlations.csv",
+      "bytes": 739,
+      "sha256": "ef5b516e2f8b2db808ade82f6d205c8d8aa8a39f0e7806386c0902b09de4646e",
+      "rows": 12,
+      "columns": [
+        "size_m",
+        "offset_x",
+        "offset_y",
+        "common_cells",
+        "pairwise_spearman_min",
+        "pairwise_spearman_median",
+        "pairwise_spearman_max"
+      ],
+      "description": "Ranking correlation summaries under grid-size and offset settings."
+    },
+    {
+      "file": "data/threshold_responses.csv",
+      "bytes": 9130461,
+      "sha256": "e8698c27f008b2b7dbce5d47eab915bafcce63590aa7f8167e12da9c15f5a672",
+      "rows": 70812,
+      "columns": [
+        "branch",
+        "scenario",
+        "path_quantile",
+        "year",
+        "threshold_m",
+        "domain_area_km2",
+        "S1_area_km2",
+        "S2_area_km2",
+        "S2_only_km2",
+        "S1_only_km2",
+        "both_km2",
+        "neither_km2"
+      ],
+      "description": "Areas classified by branch, scenario, quantile, year and elevation-loss threshold."
+    }
+  ]
+}
